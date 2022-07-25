@@ -84,6 +84,17 @@ static CpuMicroarch compute_cpu_microarch() {
       return IntelAlderlake;
     case 0x30f00:
       return AMDF15R30;
+    case 0x00f60:
+    case 0x10f60:
+    case 0x20f60:
+    case 0x30f60:
+    case 0x40f60:
+    case 0x50f60:
+    case 0x60f60:
+    case 0x70f60:
+    case 0x80f60:
+    case 0x90f60:
+      return AMDF15R30;
     case 0x00f10: // Naples, Whitehaven, Summit Ridge, Snowy Owl (Zen), Milan (Zen 3) (UNTESTED)
     case 0x10f10: // Raven Ridge, Great Horned Owl (Zen) (UNTESTED)
     case 0x10f80: // Banded Kestrel (Zen), Picasso (Zen+) (UNTESTED)
